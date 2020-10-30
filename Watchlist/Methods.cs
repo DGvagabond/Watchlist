@@ -2,10 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Discord;
-using Discord.Commands;
 using Exiled.API.Features;
-using Utf8Json.Resolvers.Internal;
 
 namespace Watchlist
 {
