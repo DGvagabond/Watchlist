@@ -19,16 +19,16 @@ namespace Watchlist
                 if (ev.Player.DoNotTrack)
                 {
                     if (Watchlist.Instance.Config.PingRoleId != 0 && Watchlist.Instance.Config.PingRoleId.ToString().Length == 18)
-                        ProcessSTT.SendData($"<@&{Watchlist.Instance.Config.PingRoleId}> `A watched user has joined`\n{ev.Player.Nickname} ({ev.Player.UserId})\n============================", (ulong)Watchlist.Instance.Config.LogChannel);
+                        ProcessSTT.SendData($"<@&{Watchlist.Instance.Config.PingRoleId}> `A watched user has joined`\n{ev.Player.Nickname} ({ev.Player.UserId})\n============================", Watchlist.Instance.Config.LogChannel);
                     else
-                        ProcessSTT.SendData($"`A watched user has joined`\n{ev.Player.Nickname} ({ev.Player.UserId})\n============================", (ulong)Watchlist.Instance.Config.LogChannel);
+                        ProcessSTT.SendData($"`A watched user has joined`\n{ev.Player.Nickname} ({ev.Player.UserId})\n============================", Watchlist.Instance.Config.LogChannel);
                 }
                 if (!ev.Player.DoNotTrack)
                 {
                     if (Watchlist.Instance.Config.PingRoleId != 0 && Watchlist.Instance.Config.PingRoleId.ToString().Length == 18)
-                        ProcessSTT.SendData($"<@&{Watchlist.Instance.Config.PingRoleId}> `A watched user has joined`\n{ev.Player.Nickname} ({ev.Player.UserId}) ||{ev.Player.IPAddress}||\n============================", (ulong)Watchlist.Instance.Config.LogChannel);
+                        ProcessSTT.SendData($"<@&{Watchlist.Instance.Config.PingRoleId}> `A watched user has joined`\n{ev.Player.Nickname} ({ev.Player.UserId}) ||{ev.Player.IPAddress}||\n============================", Watchlist.Instance.Config.LogChannel);
                     else
-                        ProcessSTT.SendData($"`A watched user has joined`\n{ev.Player.Nickname} ({ev.Player.UserId}) ||{ev.Player.IPAddress}||\n============================", (ulong)Watchlist.Instance.Config.LogChannel);
+                        ProcessSTT.SendData($"`A watched user has joined`\n{ev.Player.Nickname} ({ev.Player.UserId}) ||{ev.Player.IPAddress}||\n============================", Watchlist.Instance.Config.LogChannel);
                 }
             }
         }
