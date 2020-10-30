@@ -39,7 +39,7 @@ namespace Watchlist
             }
         }
 
-        public bool RemoveWarning(string userId, int warnId)
+        public bool RemoveWarning(string userId, ulong warnId)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace Watchlist
             string[] read = File.ReadAllLines(path);
 
             string info = string.Empty;
-            int counter = 0;
+            ulong counter = 0;
             foreach (string s in read)
             {
                 counter++;
