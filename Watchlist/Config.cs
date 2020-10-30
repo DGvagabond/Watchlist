@@ -9,7 +9,7 @@ namespace Watchlist
         public bool IsEnabled { get; set; } = true;
         public bool Debug { get; set; }
         public string FolderPath { get; set; }= Path.Combine(Paths.Plugins, "Watchlist");
-        public int PingRoleId { get; set; } = 0;
-        public int LogChannel { get; set; } = 0;
+        public ulong PingRoleId { get; set; } = 0;
+        public ulong LogChannel { get; set; } = 0;
     }
 }

@@ -17,8 +17,8 @@ namespace Watchlist
 
         public override string Author { get; } = "DGvagabond";
         public override string Name { get; } = "Watchlist";
-        public override Version Version { get; } = new Version(1, 0, 0, 0);
-        public override Version RequiredExiledVersion { get; } = new Version(2, 1, 7);
+        public override Version Version { get; } = new Version(1, 0, 0, 1);
+        public override Version RequiredExiledVersion { get; } = new Version(2, 1, 11);
 
         public Methods Methods;
         public EventHandlers Handler;
